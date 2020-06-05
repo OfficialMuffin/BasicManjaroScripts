@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo 'WELCOME!'
+
+echo 'Today's Date'
+date
+
+echo 'Updating Packages...'
+sudo pacman -Syyu
+sudo pacman -Scc
+
+echo 'Displaying WiFi Info...'
+ip a | grep wlo1
+
